@@ -209,6 +209,10 @@
             display: inline-block;
             width: 25px;
         }
+        .fakeHide {
+            width: 0px;
+            height: 0px;
+        }
         #defeated{
             display: none;
         }
@@ -262,8 +266,7 @@
                     <img id="imgIsPositive" src="image/moulde_03.jpg"  alt=""/>
                 </div>
                 <div class="imgGroup_listRight">
-                    <label for="idIsPositive" id="idIsPositiveLabel" class="idLabel">上传正面</label>
-                    <input type="file" style="display:none" name="frontFile"  required="required" onchange="loadImageFile('idIsPositive','imgIsPositive','idIsPositiveCon','idIsPositiveLabel')" id="idIsPositive" />
+					<label for="idIsPositive" id="idIsPositiveLabel" class="idLabel">上传正面</label>
                 </div>
             </div>
             <div class="imgGroup_list">
@@ -274,11 +277,11 @@
                     <label for="idIsOpposite"  id="idIsOppositeLabel" class="idLabel">上传背面</label>
                 </div>
             </div>
-            <div id="idIsPositiveCon">
-                
+            <div id="idIsPositiveCon" class="fakeHide">
+                <input type="file" name="backFile" required="required" onchange="loadImageFile('idIsOpposite','imgIsOpposite','idIsPositiveCon','idIsOppositeLabel')" id="idIsPositive" class="fakeHide" />
             </div>
-            <div id="imgIsOppositeCon">
-                <input type="file" name="backFile" required="required" onchange="loadImageFile('idIsOpposite','imgIsOpposite','idIsPositiveCon','idIsOppositeLabel')" id="idIsOpposite" />
+            <div id="imgIsOppositeCon" class="fakeHide">
+                <input type="file" name="backFile" required="required" onchange="loadImageFile('idIsOpposite','imgIsOpposite','idIsPositiveCon','idIsOppositeLabel')" id="idIsOpposite" class="fakeHide" />
 
             </div>
         </div>
@@ -331,7 +334,6 @@
             var oFile = document.getElementById(inputID).files[0];
             if (!rFilter.test(oFile.type)) { alert("You must select a valid image file!"); return; }
             oFReader.readAsDataURL(oFile);
-            alert(oFile);
             oFReader.onload = function (oFREvent) {
                 document.getElementById(imgID).src = oFREvent.target.result;
                 console.log(document.getElementById(inputCon).innerHTML);
