@@ -263,6 +263,7 @@
                 </div>
                 <div class="imgGroup_listRight">
                     <label for="idIsPositive" id="idIsPositiveLabel" class="idLabel">上传正面</label>
+                    <input type="file" style="display:none" name="frontFile"  required="required" onchange="loadImageFile('idIsPositive','imgIsPositive','idIsPositiveCon','idIsPositiveLabel')" id="idIsPositive" />
                 </div>
             </div>
             <div class="imgGroup_list">
@@ -274,7 +275,7 @@
                 </div>
             </div>
             <div id="idIsPositiveCon">
-                <input type="file" name="frontFile"  required="required" onchange="loadImageFile('idIsPositive','imgIsPositive','idIsPositiveCon','idIsPositiveLabel')" id="idIsPositive" />
+                
             </div>
             <div id="imgIsOppositeCon">
                 <input type="file" name="backFile" required="required" onchange="loadImageFile('idIsOpposite','imgIsOpposite','idIsPositiveCon','idIsOppositeLabel')" id="idIsOpposite" />
