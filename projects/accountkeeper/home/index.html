@@ -7,6 +7,7 @@
     <meta name="description" content=""/>
     <meta content="telephone=no" name="format-detection"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <link href="../css/main.css" type="text/css" rel="stylesheet"/>
     <link href="css.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
@@ -49,7 +50,7 @@
     </div>
     <div class="month-card">
         <div class="month-card-container">
-            <div class="month-card-content shadow">
+            <div class="month-card-content shadow" data-target-url="../daydetail/daydetail.html">
                 <div class="title1">今日消费</div>
                 <div class="title2">2笔</div>
                 <div class="title3">23</div>
@@ -57,11 +58,21 @@
         </div>
     </div>
 </div>
-<div class="shadow" id="monthDetailChart"></div>
-<div class="float-btn"><span class="add">+</span></div>
+<div class="shadow" id="month-detail-panel">
+    <div class="period-tab-bar">
+        <div class="selected">日</div>
+        <div class="">周</div>
+        <div>月</div>
+    </div>
+    <div id="month-detail-chart"></div>
+</div>
+<div class="float-btn" data-target-url="../storyedit/storyedit.html">
+    <span class="add">+</span>
+</div>
 </body>
 <script src="../libs/jquery-1.11.0.min.js"></script>
 <!--<script src="../libs/highcharts.src.js"></script>-->
 <script src="../libs/highcharts.js"></script>
+<script src="../libs/zepto.min.js"></script>
 <script src="js.js"></script>
 </html>

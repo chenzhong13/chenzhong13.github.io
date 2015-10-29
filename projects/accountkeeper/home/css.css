@@ -1,35 +1,28 @@
-body {
-    margin: 0;
-    background-color: #F0EFF5;
-    height: 1000px;
-}
-
 .title-bar {
-    background-color: #2196f3;
+    background-color: #2196F3;
     height: 56px;
     line-height: 56px;
 }
 
-.shadow {
-    box-shadow: 1px 1px 1px #d0d0d0;
-}
-
 #monthChart {
-    background-color: #2196f3;
+    background-color: #2196F3;
     width: 100%;
     height: 200px;
 }
 
-#monthDetailChart {
-    height: 168px;
+#month-detail-panel {
+    margin: 20px 0 0 0;
     display: block;
     background-color: white;
-    border-top: 1px solid #e0e8e0;
+}
+
+#month-detail-chart {
+    height: 168px;
 }
 
 #monthStats {
     height: 78px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     background-color: white;
     border-top: 1px solid #e0e8e0;
 }
@@ -51,24 +44,25 @@ body {
 
 .month-card-content .title1 {
     line-height: 25px;
+    font-size: 15px;
+    color: #212121;
 }
 
 .month-card-content .title2 {
     line-height: 12px;
     font-size: 12px;
+    color: #B6B6B6;
 }
 
 .month-card-content .title3 {
     line-height: 25px;
+    font-size: 15px;
+    color: #727272;
 }
 
 #dayDetailChart {
     height: 200px;
     display: none;
-}
-
-#lastItem {
-
 }
 
 .float-btn {
@@ -77,9 +71,8 @@ body {
     height: 65px;
     z-index: 100;
     background-color: #8bc34a;
-    float: left;
-    left: 50%;
-    margin-left: -32.5px;
+    float: right;
+    right: 20px;
     bottom: 10px;
     border-radius: 50%;
     text-align: center;
@@ -89,5 +82,27 @@ body {
 .float-btn .add {
     line-height: 65px;
     color: white;
-    font-size: 65px;
+    font-size: 48px;
+}
+
+.period-tab-bar {
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    border-top: 1px solid #e0e8e0;
+    border-bottom: 1px solid #BBDEFB;
+}
+
+.period-tab-bar div {
+    width: 56px;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    border-right: 1px solid #e0e8e0;
+    color: #212121;
+}
+
+.period-tab-bar .selected {
+    background-color: #BBDEFB;
+    font-size: 16px;
 }
