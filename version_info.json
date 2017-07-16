@@ -4,5 +4,5 @@
     "log": "1. Fix some bugs\n2. some new features\n\n3. no more",
     "force_update": false,
     "alert": true,
-    "alert_interval": 1610000
+    "alert_interval_in_min": 3
 }
