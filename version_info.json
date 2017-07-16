@@ -1,7 +1,7 @@
 {
     "vc": 70,
     "vn": "2.5.0",
-    "log": "Fix some bugs",
+    "log": "1. Fix some bugs\n2. some new features\n\n3. no more",
     "force_update": false,
     "alert": true,
     "alert_interval": 1610000
