@@ -1,15 +1,15 @@
 {
-　　"status":"success",
-　　"info":[
-　　　　{
-　　　　　　"device_info":"device_info",
-　　　　　　"device_udid":"device_udid",
-　　　　　　"token":"token_ke78fw79if"
-　　　　},
-　　　　{
-　　　　　　"device_udid":"browser_udid",
-　　　　　　"device_info":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36",
-　　　　　　"token":"device_token_bn8imq13te"
-　　　　}
-　　]
+  "status": "success",
+  "info": [
+    {
+      "device_info": "device_info",
+      "device_udid": "device_udid",
+      "token": "token_ke78fw79if"
+    },
+    {
+      "device_udid": "browser_udid",
+      "device_info": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36",
+      "token": "device_token_bn8imq13te"
+    }
+  ]
 }
